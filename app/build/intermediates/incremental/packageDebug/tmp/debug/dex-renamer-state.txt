@@ -1,4 +1,4 @@
-#Wed Dec 04 22:15:50 PST 2019
+#Thu Dec 05 00:09:09 PST 2019
 base.0=/Users/andychu/Documents/Beer_Pairing_App/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
