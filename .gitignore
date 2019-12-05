@@ -1,5 +1,11 @@
 /build
+gradle
 .gradle
 .idea
 local.properties
+settings.gradle
 build.gradle
+Beer_Pairing_App.iml
+gradle.properties
+gradlew
+gradlew.bat
