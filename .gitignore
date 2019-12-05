@@ -1,8 +1,11 @@
+# ignore gradle files
+.gradle
 /build
+
+app/build
 app.iml
 proguard-rules.pro
 gradle
-.gradle
 .idea
 local.properties
 settings.gradle
