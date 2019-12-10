@@ -2,14 +2,12 @@ package com.example.beer_pairing_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.beer_pairing_app.databinding.ActivityMainBinding
 import com.google.gson.GsonBuilder
 import okhttp3.*
-import java.io.File
 import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
@@ -33,11 +31,8 @@ class MainActivity : AppCompatActivity() {
 
         println("Attempting to fetch JSON")
 
-        // URL for beers api
-        // val url = "https://api.punkapi.com/v2/beers"
-
-        // URL for online example
-        val url = "https://api.letsbuildthatapp.com/youtube/home_feed"
+        // URL for beers api (Returns 25 beers)
+        val url = "https://api.punkapi.com/v2/beers"
 
         // Creating okHttpClient for fetching from API
         val client = OkHttpClient()
@@ -50,15 +45,21 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call, response: Response) {
                 val body = response.body?.string()
 
-                print("successful fetch")
+                println("successful fetch")
 
                 // printing body object for testing purposes
-                println(body)
+                //println(body)
 
                 val gson = GsonBuilder().create()
-                // val beers = gson.fromJson(body, Bar::class.java)
-                val homefeed = gson.fromJson(body, HomeFeed::class.java)
 
+                // https://stackoverflow.com/questions/53685627/expected-begin-object-but-was-begin-array-kotlin
+                val beers: List<Beer> = gson.fromJson(body, Array<Beer>::class.java).toList()
+                beers.forEach{
+                    println(it.id)
+                    println("Beer name: " + it.name)
+                    println("Tagline: " + it.tagline)
+                    println("description: " + it.description)
+                }
 
             }
             override fun onFailure(call: Call, e: IOException) {
@@ -70,12 +71,4 @@ class MainActivity : AppCompatActivity() {
 
 }
 
-class Bar(val beers: List<Beer>)
-
-class Beer(val id: Int, val name: String)
-
-// Classes from online example
-
-class HomeFeed(val videos: List<MediaStore.Video>)
-
-class Video(val id: Int, val name: String)
+class Beer(val id: Int, val name: String, val tagline: String, val description: String)
