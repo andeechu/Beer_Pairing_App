@@ -40,7 +40,8 @@ class MainActivity : AppCompatActivity() {
         println("Attempting to fetch JSON")
 
         // URL for beers api (Returns 25 beers)
-        val url = "https://api.punkapi.com/v2/beers"
+        //val url = "https://api.punkapi.com/v2/beers"
+        val url = "https://api.punkapi.com/v2/beers?food=spicy"
 
         // Creating okHttpClient for fetching from API
         val client = OkHttpClient()
