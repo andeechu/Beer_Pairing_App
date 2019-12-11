@@ -85,4 +85,4 @@ class MainActivity : AppCompatActivity() {
 
 }
 
-class Beer(val id: Int, val name: String, val tagline: String, val description: String)
+class Beer(val id: Int, val name: String, val tagline: String, val description: String, val abv: String, val food_pairing: Array<String>)
