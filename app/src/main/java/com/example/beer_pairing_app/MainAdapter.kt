@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.beer_pairing_app.model.Beer
 import kotlinx.android.synthetic.main.beer_row.view.*
 
 class MainAdapter(val beers: List<Beer>): RecyclerView.Adapter<CustomViewHolder>() {
