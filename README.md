@@ -62,3 +62,6 @@ A major component in the app is the recyclerView that was used to list the beers
 
 ## Challenge with JSON data
 Fetching data from the API was very challenging. Various classes were created to create the request and handle the data such as **ApiService** and **MyRetrofitBuilder**. A data class called **Beer** was used to create the Beer objects that were used for the recyclerView. The Beer objects contain the name for each beer and other details. The `toString` method for the class was overriden for debugging purposes.
+
+# Demo
+- [Video Demo](https://youtu.be/MwbA9oJNOgE)
