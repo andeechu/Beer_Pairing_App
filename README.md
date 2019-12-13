@@ -18,9 +18,11 @@ The following dependencies go in your **build.gradle (Module:app)** file:
 **Gson** is used to parse JSON data:  
 - [Gson](https://guides.codepath.com/android/leveraging-the-gson-library)  
 
-# Link for APIs used  
+# Link for API used  
 **Punk API**  
 - [Punk API](https://punkapi.com/documentation/v2)
+Sample Request using **food** as parameter  
+`https://api.punkapi.com/v2/beers?food=spicy`  
 
 # Other settings enabled in build.gradle (Module.app)
 Add the following lines to `android{...  }` to enable **data binding**  
