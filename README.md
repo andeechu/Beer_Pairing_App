@@ -55,7 +55,7 @@ dataBinding {
 
 Main Menu                  |  Result 
 :-------------------------:|:-------------------------:
-<img width="356" alt="Screen Shot 2019-12-12 at 6 22 36 PM" src="https://user-images.githubusercontent.com/43188828/70767615-d51aa280-1d16-11ea-8ca5-2d904346b801.png">  |  <img width="347" alt="Screen Shot 2019-12-12 at 6 23 04 PM" src="https://user-images.githubusercontent.com/43188828/70767806-773a8a80-1d17-11ea-8744-d8117d667d22.png">)  
+<img width="356" alt="Screen Shot 2019-12-12 at 6 22 36 PM" src="https://user-images.githubusercontent.com/43188828/70767615-d51aa280-1d16-11ea-8ca5-2d904346b801.png">  |  <img width="347" alt="Screen Shot 2019-12-12 at 6 23 04 PM" src="https://user-images.githubusercontent.com/43188828/70767806-773a8a80-1d17-11ea-8744-d8117d667d22.png">  
 
 # Details
 A major component in the app is the recyclerView that was used to list the beers. The recyclerView is populated by **cards** which contain information for each beer. The data for the cards is fetched from the **Punk API** and is then parsed using the **Gson** library.
