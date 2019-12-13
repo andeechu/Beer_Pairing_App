@@ -65,3 +65,8 @@ Fetching data from the API was very challenging. Various classes were created to
 
 # Demo
 - [Video Demo](https://youtu.be/MwbA9oJNOgE)
+
+# Resources Used  
+- [Android Buttons](https://angrytools.com/android/button/)
+- [Video explaining retrofit and coroutines](https://www.youtube.com/watch?v=PQvtdjhQEvw&t=10s)
+- [Gson + okHttp + recyclerView](https://www.youtube.com/watch?v=53BsyxwSBJk&t=1087s)
