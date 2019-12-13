@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/rock_salt"
-            android:text="Beer Pairing"
+            android:text="@string/title"
             android:textColor="#141414"
             android:textAlignment="center"
             android:textSize="36sp"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/rock_salt"
-            android:text="Choose a Category"
+            android:text="@string/subtitle"
             android:textColor="#141414"
             android:textAlignment="center"
             android:textSize="15sp"
@@ -47,7 +47,7 @@
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="0"
-            android:text="spicy"
+            android:text="@string/spicy"
             android:textColor="#141414"
             android:textSize="30sp" />
 
@@ -65,7 +65,7 @@
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="0"
-            android:text="sweet"
+            android:text="@string/sweet"
             android:textColor="#141414"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -82,7 +82,7 @@
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="0"
-            android:text="sour"
+            android:text="@string/sour"
             android:textColor="#141414"
             android:textSize="36sp" />
 
@@ -98,7 +98,7 @@
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="0"
-            android:text="bitter"
+            android:text="@string/bitter"
             android:textColor="#141414"
             android:textSize="36sp" />
 
@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/rock_salt"
             android:layout_marginTop="50dp"
-            android:text="Created for CS4540"
+            android:text="@string/footer"
             android:textColor="#606060"
             android:textAlignment="center"
             android:textSize="15sp"
@@ -119,7 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/rock_salt"
-            android:text="2019"
+            android:text="@string/year"
             android:textColor="#606060"
             android:textAlignment="center"
             android:textSize="15sp"

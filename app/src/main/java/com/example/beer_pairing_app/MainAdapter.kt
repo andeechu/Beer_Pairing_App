@@ -31,6 +31,9 @@ class MainAdapter(val beers: List<Beer>): RecyclerView.Adapter<CustomViewHolder>
         if(position % 2 == 0){
             holder.view.beer_card.setBackgroundColor(Color.rgb(250,217,237))
         }
+        else{
+            holder.view.beer_card.setBackgroundColor(Color.WHITE)
+        }
 
         val name = beer.name
         holder.view.textView_beer_title.text = name
@@ -43,6 +46,14 @@ class MainAdapter(val beers: List<Beer>): RecyclerView.Adapter<CustomViewHolder>
 
         val abv = beer.abv
         holder.view.textView_beer_abv.text = "Alcohol by volume: $abv"
+        val abvValue = abv.toString().toDouble()
+        if (abvValue >= 7.0){
+            holder.view.textView_beer_abv.setTextColor(Color.RED)
+        }
+        else {
+            holder.view.textView_beer_abv.setTextColor(Color.BLACK)
+        }
+
 
         // Suggested foods are stored in an array, so we have to parse array to a single string
         val foods = beer.food_pairing

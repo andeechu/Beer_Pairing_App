@@ -5,12 +5,13 @@ import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.beer_pairing_app.databinding.ActivityBeerlistBinding
 import com.example.beer_pairing_app.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_beerlist.*
 
 class BeersList : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityBeerlistBinding
     lateinit var viewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {

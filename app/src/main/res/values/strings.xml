@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">Beer_Pairing_App</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="description">A component</string>
     <string name="placeholder_text">Temporary Text</string>
+    <string name="spicy">spicy</string>
+    <string name="sweet">sweet</string>
+    <string name="sour">sour</string>
+    <string name="bitter">bitter</string>
+    <string name="subtitle">Choose a category</string>
+    <string name="title">Beer Pairing</string>
+    <string name="footer">Created for CS4540</string>
+    <string name="year">2019</string>
+    <string name="random">Random</string>
 </resources>
