@@ -4,18 +4,127 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <LinearLayout
+        android:id="@+id/mainMenuLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/mainbackground"
         android:orientation="vertical">
 
-        <fragment
-            android:id="@+id/myNavHostFragment"
-            android:name="androidx.navigation.fragment.NavHostFragment"
+        <TextView
+            android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:navGraph="@navigation/navigation"
-            app:defaultNavHost="true" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rock_salt"
+            android:text="@string/title"
+            android:textColor="#141414"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rock_salt"
+            android:text="@string/subtitle"
+            android:textColor="#141414"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/spicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/frijole"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="@string/spicy"
+            android:textColor="#141414"
+            android:textSize="30sp" />
+
+
+
+        <Button
+            android:id="@+id/sweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sweetbuttonshape"
+            android:fontFamily="@font/coiny"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="@string/sweet"
+            android:textColor="#141414"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sourbuttonshape"
+            android:fontFamily="@font/butcherman"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="@string/sour"
+            android:textColor="#141414"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/bitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bitterbuttonshape"
+            android:fontFamily="@font/gorditas_bold"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="@string/bitter"
+            android:textColor="#141414"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rock_salt"
+            android:layout_marginTop="50dp"
+            android:text="@string/footer"
+            android:textColor="#606060"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subfooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rock_salt"
+            android:text="@string/year"
+            android:textColor="#606060"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
+
 </layout>
