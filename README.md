@@ -20,9 +20,18 @@ The following dependencies go in your **build.gradle (Module:app)** file:
 
 # Link for API used  
 **Punk API**  
-- [Punk API](https://punkapi.com/documentation/v2)
+- [Punk API](https://punkapi.com/documentation/v2)  
 Sample Request using **food** as parameter  
-`https://api.punkapi.com/v2/beers?food=spicy`  
+`https://api.punkapi.com/v2/beers?food=spicy`
+
+Sample JSON object from request  
+`{"id":1,
+"name":"Buzz","tagline":"A Real Bitter Experience.",
+"first_brewed":"09/2007",
+"description":"A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
+"abv":4.5,
+"food_pairing":["Spicy chicken tikka masala","Grilled chicken quesadilla","Caramel toffee cake"]}`
+
 
 # Other settings enabled in build.gradle (Module.app)
 Add the following lines to `android{...  }` to enable **data binding**  
