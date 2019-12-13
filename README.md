@@ -40,3 +40,5 @@ dataBinding {
   enabled = true  
 }  
 ```
+# Main Menu
+<img width="356" alt="Screen Shot 2019-12-12 at 6 22 36 PM" src="https://user-images.githubusercontent.com/43188828/70767615-d51aa280-1d16-11ea-8ca5-2d904346b801.png">
