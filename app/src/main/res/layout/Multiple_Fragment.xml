@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        tools:context=".MainMenu">
+
+        <Button
+            android:id="@+id/beer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Beers" />
+
+        <Button
+            android:id="@+id/food_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Food" />
+
+        <fragment android:name = "BeerFragment"
+            android:id="@id/Beer_Fragment"
+            android:layout_width="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <fragment android:name="FoodFragment"
+            android:id="@+id/Food_Fragment"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</layout>
