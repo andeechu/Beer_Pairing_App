@@ -7,10 +7,8 @@ This is an Android application created as a project for CS4540. The application 
 
 Once the category is selected, the app will display various beers that go well with the selected category. It will list various beers and display the name of the beer, a tagline, a brief description, alcohol by volume, and foods that go well for each beer listed. 
 
-# Team
+# Created by
 - Andy Echeverria
-- Michael Valdez
-- Jesus Gonzalez
 
 # Dependencies needed for the project
 The following dependencies go in your **build.gradle (Module:app)** file:  
